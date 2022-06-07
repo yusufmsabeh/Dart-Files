@@ -1,8 +1,12 @@
-enum Gender { make, female }
+enum Gender { male, female }
 
 class Perosn {
-  String fName;
-  String lName;
-  Gender gender;
-  double ageInYears;
+  late String fName;
+  late String lName;
+  late Gender gender;
+  late double ageInYears;
+  //first con
+  //Perosn(this.fName, this.lName, this.ageInYears, this.gender) {}
+//second con
+  Perosn();
 }
