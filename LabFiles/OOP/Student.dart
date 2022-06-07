@@ -4,6 +4,7 @@ class Student {
   late String fullName;
   late double gpa;
   late Level level;
+  Student(this.fullName, this.gpa, this.level);
 
   String getStudentGpa() {
     if (this.gpa >= 90)

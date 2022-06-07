@@ -6,7 +6,5 @@ class Perosn {
   late Gender gender;
   late double ageInYears;
   //first con
-  //Perosn(this.fName, this.lName, this.ageInYears, this.gender) {}
-//second con
-  Perosn();
+  Perosn(this.fName, this.lName, this.ageInYears, this.gender) {}
 }
