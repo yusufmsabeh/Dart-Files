@@ -1,10 +1,16 @@
 enum Gender { male, female }
 
-class Perosn {
-  late String fName;
-  late String lName;
+abstract class Perosn {
+  late String full_name;
+
   late Gender gender;
   late double ageInYears;
   //first con
-  Perosn(this.fName, this.lName, this.ageInYears, this.gender) {}
+  Perosn(this.full_name, this.ageInYears, this.gender);
+
+  Map<String, dynamic> toMap() {
+    return {'full_name': full_name, 'gender': gender, 'ageInYears': ageInYears};
+  }
+
+  String PrintName();
 }

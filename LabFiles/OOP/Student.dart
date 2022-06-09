@@ -1,15 +1,17 @@
+import 'Person.dart';
+
 enum Level { first, second, third, fourth, graduated }
 
-class Student {
-  late String fullName;
+abstract class Student extends Perosn {
   late double gpa;
   late Level level;
   //Normal constructor (default)
-  Student(this.fullName, this.gpa, this.level);
+  Student(String fullName, double age, Gender gender, this.gpa, this.level)
+      : super(fullName, age, gender);
 
   //named constructor
-  Student.fromMap(Map<String, dynamic> students) {
-    fullName = students['full_name'];
+  Student.fromMap(Map<String, dynamic> students)
+      : super(students['full_name'], students['age'], students['gender']) {
     gpa = students['gpa'];
     level = students['level'];
   }
@@ -27,11 +29,20 @@ class Student {
 
   @override
   String toString() {
-    return "name: $fullName || gpa:$gpa || level:$level || grade: " +
+    return "name: $full_name || gpa:$gpa || level:$level || grade: " +
         getStudentGpa();
   }
 
+  @override
   Map<String, dynamic> toMap() {
-    return {'full_name': fullName, 'gpa': gpa, "level": level};
+    // TODO: implement toMap
+    return {'gpa': gpa, 'level': level, ...super.toMap()};
   }
+
+  @override
+  String PrintName() {
+    return "Student: $full_name";
+  }
+
+  String getHomework();
 }
