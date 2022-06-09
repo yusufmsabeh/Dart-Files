@@ -4,7 +4,10 @@ class Student {
   late String fullName;
   late double gpa;
   late Level level;
+  //Normal constructor (default)
   Student(this.fullName, this.gpa, this.level);
+
+  //named constructor
   Student.fromMap(Map<String, dynamic> students) {
     fullName = students['full_name'];
     gpa = students['gpa'];
@@ -28,7 +31,7 @@ class Student {
         getStudentGpa();
   }
 
-  Map toMap() {
+  Map<String, dynamic> toMap() {
     return {'full_name': fullName, 'gpa': gpa, "level": level};
   }
 }
