@@ -1,6 +1,6 @@
 enum Gender { male, female }
 
-abstract class Perosn {
+class Perosn {
   late String full_name;
 
   late Gender gender;
@@ -11,6 +11,4 @@ abstract class Perosn {
   Map<String, dynamic> toMap() {
     return {'full_name': full_name, 'gender': gender, 'ageInYears': ageInYears};
   }
-
-  String PrintName();
 }

@@ -18,4 +18,4 @@ List<Map<String, dynamic>> students = [
   }
 ];
 
-//List<Student> studentList = students.map((e) => Student.fromMap(e)).toList();
+List<Student> studentList = students.map((e) => Student.fromMap(e)).toList();

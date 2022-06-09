@@ -2,7 +2,7 @@ import 'Person.dart';
 
 enum Level { first, second, third, fourth, graduated }
 
-abstract class Student extends Perosn {
+class Student extends Perosn {
   late double gpa;
   late Level level;
   //Normal constructor (default)
@@ -35,7 +35,6 @@ abstract class Student extends Perosn {
 
   @override
   Map<String, dynamic> toMap() {
-    // TODO: implement toMap
     return {'gpa': gpa, 'level': level, ...super.toMap()};
   }
 
@@ -44,5 +43,7 @@ abstract class Student extends Perosn {
     return "Student: $full_name";
   }
 
-  String getHomework();
+  @override
+// operator overriding
+  bool operator ==(other) => other.toString() == this.toString();
 }
