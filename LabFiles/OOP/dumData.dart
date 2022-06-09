@@ -6,4 +6,4 @@ List<Map<String, dynamic>> students = [
   {'full_name': 'Oday mutlk ', 'gpa': 95.0, 'level': Level.third}
 ];
 
-List<Student> student = students.map((e) => Student.fromMap(e)).toList();
+List<Student> studentList = students.map((e) => Student.fromMap(e)).toList();

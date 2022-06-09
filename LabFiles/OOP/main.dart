@@ -11,8 +11,9 @@ void main(List<String> args) {
 
   print(student.getStudentGpa());
 
-  Student student2 = new Student.fromMap(students.first);
-  print(student2);
-  Map student2Map = student2.toMap();
-  print(student2Map['full_name']);
+  Student student2 = studentList.first;
+
+  print(student2.toString());
+  Map FirstStudnet = student2.toMap();
+  print(FirstStudnet['full_name']);
 }
