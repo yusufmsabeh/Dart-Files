@@ -14,11 +14,11 @@ void main(List<String> args) {
 
   print(student.getStudentGpa());
 
-  Student student2 = studentList.first;
+  // Student student2 = studentList.first;
 
-  print(student2.toString());
-  Map FirstStudnet = student2.toMap();
-  print(FirstStudnet['full_name']);
+  // print(student2.toString());
+  // Map FirstStudnet = student2.toMap();
+  // print(FirstStudnet['full_name']);
 
   Student studentOne =
       new Student("Yusuf Msabeh", 20, Gender.male, 81, Level.third);
