@@ -1,8 +1,9 @@
+import 'Managment.dart';
 import 'Person.dart';
 
 enum Level { first, second, third, fourth, graduated }
 
-class Student extends Perosn {
+class Student extends Perosn implements Mangment {
   late double gpa;
   late Level level;
   //Normal constructor (default)
@@ -46,4 +47,9 @@ class Student extends Perosn {
   @override
 // operator overriding
   bool operator ==(other) => other.toString() == this.toString();
+
+  @override
+  void prinData() {
+    print("$full_name , $ageInYears , $gpa");
+  }
 }
