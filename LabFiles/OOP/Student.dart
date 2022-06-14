@@ -3,7 +3,7 @@ import 'Person.dart';
 
 enum Level { first, second, third, fourth, graduated }
 
-class Student extends Perosn implements Mangment {
+class Student extends Perosn with Mangment {
   late double gpa;
   late Level level;
   //Normal constructor (default)

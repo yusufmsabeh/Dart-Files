@@ -1,17 +1,18 @@
 import 'general_class.dart';
 
-class Human implements GereralClass {
-  @override
-  double? age;
+class Human with GereralClass {
+//this overriding with implements keyword
+  // @override
+  // double? age;
 
-  @override
-  bool? isMale;
+  // @override
+  // bool? isMale;
 
-  @override
-  String? name;
+  // @override
+  // String? name;
 
-  @override
-  setAge(int ageInMonths) {
-    this.age = ageInMonths / 12;
-  }
+  // @override
+  // setAge(int ageInMonths) {
+  //   this.age = ageInMonths / 12;
+  // }
 }
