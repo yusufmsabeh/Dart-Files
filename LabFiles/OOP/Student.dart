@@ -46,7 +46,8 @@ class Student extends Perosn with Mangment {
 
   @override
 // operator overriding
-  bool operator ==(other) => other.toString() == this.toString();
+  bool operator ==(other) =>
+      (other.toString() == this.toString() && other is Student);
 
   @override
   void prinData() {
