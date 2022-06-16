@@ -1,4 +1,4 @@
-import 'general_class.dart';
+import '../general_class.dart';
 
 class Human with GereralClass {
 //this overriding with implements keyword
