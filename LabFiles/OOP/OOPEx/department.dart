@@ -1,16 +1,16 @@
 import 'location.dart';
 
-class department {
+class Department {
   String? name;
   String? city;
   String? company;
-  late locatoin location;
+  late Location location;
 
-  department.fromMap(Map depatment) {
+  Department.fromMap(Map depatment) {
     this.name = depatment['name'];
     this.city = depatment['city'];
     this.company = depatment['company'];
-    this.location = new locatoin.fromJson(depatment['location']);
+    this.location = new Location.fromJson(depatment['location']);
   }
 
   @override

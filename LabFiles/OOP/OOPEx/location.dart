@@ -1,7 +1,7 @@
-class locatoin {
+class Location {
   late int lat;
   late int lon;
-  locatoin.fromJson(Map location) {
+  Location.fromJson(Map location) {
     this.lat = location['lat'];
     this.lon = location['lon'];
   }
