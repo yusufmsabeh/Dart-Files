@@ -1,22 +1,28 @@
 import 'department.dart';
 
 class employ {
-  String? name;
-  int? age;
-  int? salary;
-  bool? isMale;
-  int? moblie;
-  department? departmentvar;
-  List<String>? sons;
+  late String name;
+  late int age;
+  late int salary;
+  late String sex;
+  late int mobile;
+  late department dept;
+  late int sons;
 
-  employ(this.name, this.age, this.salary, this.isMale, this.moblie, this.sons);
   employ.fromJson(Map<String, dynamic> employs) {
+    employs = employs['data'];
     this.name = employs["name"];
     this.age = employs["age"];
     this.salary = employs["salary"];
-    this.isMale = employs["isMale"];
-    this.moblie = employs["moblie"];
+    this.sex = employs["isMale"] == 1 ? "Male" : "Female";
+    this.mobile = employs["mobile"];
     this.sons = employs["sons"];
-    this.departmentvar = new department.fromMap(employs['department']);
+    this.dept = new department.fromMap(employs['department']);
+  }
+
+  @override
+  String toString() {
+    // TODO: implement toString
+    return "name: $name , age: $age , salary: $salary , sex: $sex , mobile: $mobile ,\n department Info:\n{ $dept }";
   }
 }
