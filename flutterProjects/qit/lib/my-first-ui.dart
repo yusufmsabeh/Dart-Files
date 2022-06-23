@@ -56,52 +56,176 @@ class myFirstUI extends StatelessWidget {
     //   )),
     // );
 
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: Text("This The AppBar"),
+    //   ),
+    //   body: Row(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: [
+    //       Column(
+    //         children: [
+    //           Image.network(
+    //             ImageUrl,
+    //             width: width,
+    //             height: hight,
+    //           ),
+    //           Text("Swain"),
+    //         ],
+    //       ),
+    //       Column(
+    //         children: [
+    //           Image.network(
+    //             ImageUrl,
+    //             width: width,
+    //             height: hight,
+    //           ),
+    //           Column(
+    //             children: [
+    //               Text("swain"),
+    //             ],
+    //           )
+    //         ],
+    //       ),
+    //       Column(
+    //         children: [Text("Yusuf Abu Msabeh")],
+    //       )
+    //     ],
+    //   ),
+    // );
+
+    // return Scaffold(
+    //   appBar: AppBar(title: Text("This The AppBar")),
+    //   body: Column(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: [
+    //       Row(
+    //         mainAxisAlignment: MainAxisAlignment.center,
+    //         children: [
+    //           Column(children: [
+    //             Image.network(
+    //               ImageUrl,
+    //               width: width,
+    //               height: hight,
+    //             ),
+    //             Text("Swain")
+    //           ]),
+    //           Column(
+    //             children: [
+    //               Image.network(
+    //                 ImageUrl,
+    //                 width: width,
+    //                 height: hight,
+    //               ),
+    //               Text("Swain")
+    //             ],
+    //           )
+    //         ],
+    //       ),
+    //       const SizedBox(
+    //         width: 20,
+    //       ),
+    //       Text("Yusuf Abu Msabeh")
+    //     ],
+    //   ),
+    // );
+
     return Scaffold(
-      appBar: AppBar(title: Text("This the appbar")),
-      body: Center(
-        child: Column(
+      appBar: AppBar(title: Text("This The AppBar")),
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.network(
-                          width: width,
-                          ImageUrl,
-                        ),
-                        Text("Demon Slayer Image",
-                            style: TextStyle(color: Colors.redAccent))
-                      ]),
-                ),
-                Expanded(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.network(
-                          width: width,
-                          ImageUrl,
-                        ),
-                        Text(
-                          "Demon Slayer Image",
-                          style: TextStyle(color: Colors.redAccent),
-                        ),
-                      ]),
-                ),
-              ],
+            Expanded(
+              child: Column(
+                children: [
+                  Image.network(
+                    ImageUrl,
+                    width: width,
+                    height: hight,
+                  ),
+                  // ignore: prefer_const_constructors
+                  Text(
+                    "Swian",
+                    style: TextStyle(color: Colors.blue),
+                  )
+                ],
+              ),
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
-              "Yusuf Abu Msabeh",
-              style: TextStyle(color: Colors.blue),
-            ),
+            Expanded(
+              child: Column(
+                children: [
+                  Image.network(
+                    ImageUrl,
+                    width: width,
+                    height: hight,
+                  ),
+                  Text(
+                    "Swain",
+                    style: TextStyle(color: Colors.blue),
+                  )
+                ],
+              ),
+            )
           ],
         ),
-      ),
+        SizedBox(
+          height: 20,
+        ),
+        Text(
+          "Yusuf Abu Msabeh",
+          style: TextStyle(color: Colors.blue),
+        )
+      ]),
     );
+
+    // return Scaffold(
+    //   appBar: AppBar(title: Text("This the appbar")),
+
+    //   body: Center(
+    //     child: Column(
+    //       mainAxisAlignment: MainAxisAlignment.center,
+    //       children: [
+    //         Row(
+    //           children: [
+    //             Expanded(
+    //               child: Column(
+    //                   mainAxisAlignment: MainAxisAlignment.center,
+    //                   children: [
+    //                     Image.network(
+    //                       width: width,
+    //                       ImageUrl,
+    //                     ),
+    //                     Text("Demon Slayer Image",
+    //                         style: TextStyle(color: Colors.redAccent))
+    //                   ]),
+    //             ),
+    //             Expanded(
+    //               child: Column(
+    //                   mainAxisAlignment: MainAxisAlignment.center,
+    //                   children: [
+    //                     Image.network(
+    //                       width: width,
+    //                       ImageUrl,
+    //                     ),
+    //                     Text(
+    //                       "Demon Slayer Image",
+    //                       style: TextStyle(color: Colors.redAccent),
+    //                     ),
+    //                   ]),
+    //             ),
+    //           ],
+    //         ),
+    //         SizedBox(
+    //           height: 20,
+    //         ),
+    //         Text(
+    //           "Yusuf Abu Msabeh",
+    //           style: TextStyle(color: Colors.blue),
+    //         ),
+    //       ],
+    //     ),
+    //   ),
+    // );
   }
 }
