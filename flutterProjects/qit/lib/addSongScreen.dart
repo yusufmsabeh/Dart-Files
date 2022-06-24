@@ -7,7 +7,7 @@ class AddSong extends StatelessWidget {
   @override
   @override
   final double width = 200;
-  final double hieght = 30;
+  final double hieght = 40;
 
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -22,10 +22,10 @@ class AddSong extends StatelessWidget {
           Container(
             // padding: EdgeInsets.all(8),
             width: 300,
-            height: 300,
+            height: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.blue,
+                color: Color.fromARGB(255, 68, 162, 240),
                 border: Border.all(color: Color.fromARGB(255, 0, 56, 102))),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -35,20 +35,20 @@ class AddSong extends StatelessWidget {
                       color: Colors.white,
                       fontWeight: FontWeight.w900)),
               SizedBox(
-                height: 50,
+                height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                      width: 80,
-                      child: Text(
-                        "Song Name",
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      )),
+                  // SizedBox(
+                  //     width: 90,
+                  //     child: Text(
+                  //       "Song Name: ",
+                  //       style: TextStyle(
+                  //           fontSize: 15,
+                  //           fontWeight: FontWeight.bold,
+                  //           color: Colors.white),
+                  //     )),
                   SizedBox(
                     height: 20,
                   ),
@@ -57,10 +57,11 @@ class AddSong extends StatelessWidget {
                     height: hieght,
                     child: TextField(
                       decoration: new InputDecoration(
+                          hintText: "Enter Song Name",
                           filled: true,
                           fillColor: Colors.white,
                           border: new OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(10),
                               borderSide: new BorderSide(color: Colors.blue))),
                     ),
                   ),
@@ -72,24 +73,25 @@ class AddSong extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                      width: 80,
-                      child: Text(
-                        "Adder",
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      )),
+                  // SizedBox(
+                  //     width: 90,
+                  //     child: Text(
+                  //       "Adder: ",
+                  //       style: TextStyle(
+                  //           fontSize: 15,
+                  //           fontWeight: FontWeight.bold,
+                  //           color: Colors.white),
+                  //     )),
                   SizedBox(
                       height: hieght,
                       width: width,
                       child: TextField(
                         decoration: new InputDecoration(
+                            hintText: 'Your name',
                             filled: true,
                             fillColor: Colors.white,
                             border: new OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(10),
                                 borderSide:
                                     new BorderSide(color: Colors.blue))),
                       ))
