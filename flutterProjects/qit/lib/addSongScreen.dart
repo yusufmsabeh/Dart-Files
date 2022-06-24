@@ -13,7 +13,10 @@ class AddSong extends StatelessWidget {
     // TODO: implement build
 
     return Scaffold(
-      appBar: AppBar(title: Text("Add Song")),
+      appBar: AppBar(
+        title: Text("Add Song"),
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Container(
@@ -35,6 +38,9 @@ class AddSong extends StatelessWidget {
               ),
               Text("Song Name"),
               SizedBox(
+                height: 20,
+              ),
+              SizedBox(
                 width: width,
                 height: hieght,
                 child: TextField(
@@ -50,6 +56,9 @@ class AddSong extends StatelessWidget {
                 height: 20,
               ),
               Text("Adder"),
+              SizedBox(
+                height: 20,
+              ),
               SizedBox(
                   height: hieght,
                   width: width,
