@@ -20,6 +20,7 @@ class AddSong extends StatelessWidget {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Container(
+            // padding: EdgeInsets.all(8),
             width: 300,
             height: 300,
             decoration: BoxDecoration(
@@ -36,40 +37,64 @@ class AddSong extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Text("Song Name"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                      width: 80,
+                      child: Text(
+                        "Song Name",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      )),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: width,
+                    height: hieght,
+                    child: TextField(
+                      decoration: new InputDecoration(
+                          filled: true,
+                          fillColor: Colors.white,
+                          border: new OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              borderSide: new BorderSide(color: Colors.blue))),
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(
                 height: 20,
               ),
-              SizedBox(
-                width: width,
-                height: hieght,
-                child: TextField(
-                  decoration: new InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: new OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: new BorderSide(color: Colors.blue))),
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                      width: 80,
+                      child: Text(
+                        "Adder",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      )),
+                  SizedBox(
+                      height: hieght,
+                      width: width,
+                      child: TextField(
+                        decoration: new InputDecoration(
+                            filled: true,
+                            fillColor: Colors.white,
+                            border: new OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide:
+                                    new BorderSide(color: Colors.blue))),
+                      ))
+                ],
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Text("Adder"),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                  height: hieght,
-                  width: width,
-                  child: TextField(
-                    decoration: new InputDecoration(
-                        filled: true,
-                        fillColor: Colors.white,
-                        border: new OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: new BorderSide(color: Colors.blue))),
-                  ))
             ]),
           ),
           SizedBox(
