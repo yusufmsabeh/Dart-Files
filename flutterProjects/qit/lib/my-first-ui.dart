@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:qit/addSongScreen.dart';
 
 class myFirstUI extends StatelessWidget {
-  String ImageUrl = "https://images6.alphacoders.com/903/903594.jpg";
+  String ImageUrl =
+      "https://media.istockphoto.com/photos/sunrise-on-a-lake-picture-id1043560968?s=612x612";
   double width = 170;
   double hight = 170;
   @override
@@ -175,7 +177,13 @@ class myFirstUI extends StatelessWidget {
         Text(
           "Yusuf Abu Msabeh",
           style: TextStyle(color: Colors.blue),
-        )
+        ),
+        TextButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AddSong()));
+            },
+            child: Text("Add Song"))
       ]),
     );
 
